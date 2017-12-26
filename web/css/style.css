@@ -1,0 +1,64 @@
+/* --- MAIN --- *
+#tecno{
+    position: relative;
+    margin-top: 900px;
+}
+
+/* --- Slider --- */
+#slider{
+    margin: -0.6% 0 3% -0.6%;
+    overflow: hidden;
+}
+    /*Valores de las imagenes*/
+    #slider img{
+        z-index: 0;
+        transition: opacity 1s;
+        width: 100%;
+        position: absolute;
+        opacity: 0;
+    }
+    /*Para que la primera imagen este activa al inicio*/
+    #slider img:nth-child(1){
+        opacity: 1;
+    }
+
+/* --- Mostrando el titulo con el logo --- */
+#tittle{
+    position: absolute;
+    z-index: 100;
+    color: white;
+    margin: 400px 0 0 70%;
+}
+
+#tittle img{
+    float : left;
+    height: 100px;
+}
+
+/* --- navigation menu --- */
+nav{
+    z-index: 100;   
+    position: fixed;
+}
+
+nav ul li.noselected{
+    list-style: none;
+    background-color: white;
+    height: 70px;
+    width: 70px;
+    margin-top: 10%;
+}
+
+nav ul li.selected{
+    list-style: none;
+    background-color: #cacaca;
+    height: 70px;
+    width: 70px;
+    margin: 10%;
+}
+
+nav ul li img{
+    height: 50px;
+    padding-top:10px;
+    padding-left:10px;
+}

@@ -1,44 +1,49 @@
-/* --- MAIN --- *
-#tecno{
-    position: relative;
-    margin-top: 900px;
+body{
+    background-color: #37383A;
+    padding: 0;
+    font-family: sans-serif;
+}
+p{
+    font-size: 1.2em;
+}
+
+h2{
+    font-size: 2.7em;
 }
 
 /* --- Slider --- */
-#slider{
-    margin: -0.6% 0 3% -0.6%;
+header>div, section{
+    width: 101.3%;
+    margin: -0.7% 0 0 -0.7%;
+}
+
+#slider{   
+    width: 100%;
     overflow: hidden;
 }
-    /*Valores de las imagenes*/
-    #slider img{
-        z-index: 0;
-        transition: opacity 1s;
-        width: 100%;
-        position: absolute;
-        opacity: 0;
-    }
-    /*Para que la primera imagen este activa al inicio*/
-    #slider img:nth-child(1){
-        opacity: 1;
-    }
+/* --- /Slider --- */
 
 /* --- Mostrando el titulo con el logo --- */
 #tittle{
     position: absolute;
     z-index: 100;
     color: white;
-    margin: 400px 0 0 70%;
+    width: 270px;
+    margin: -15% 0 0 70%;
 }
 
 #tittle img{
     float : left;
     height: 100px;
 }
+/* --- /Mostrando el titulo con el logo --- */
 
-/* --- navigation menu --- */
+/* --- Navigation Menu --- */
 nav{
     z-index: 100;   
     position: fixed;
+    margin-top: -43%;
+    margin-left: -2%;
 }
 
 nav ul li.noselected{
@@ -62,3 +67,85 @@ nav ul li img{
     padding-top:10px;
     padding-left:10px;
 }
+/* --- /Navigation Menu --- */
+
+/* ----- MAIN ----- */
+section{
+    padding: 3% 20% 7% 20%;
+    width: 61.3%;
+    position: relative;
+}
+
+    /* --- Light section ---*/
+    section.light{
+        background-color: #D8D8D8;
+        color: #E34B0A;
+    }
+    /* --- /Ligth Section --- */
+
+    /* --- Darck Section --- */
+    section.darck{
+        background-color: #E34B0A;
+        color: #D8D8D8;
+    }
+    /* --- Darck Section --- */
+
+    /* --- Tecnologies --- */
+    #tec{
+        display: block;
+    }
+
+    #tec>article>ul{
+        margin: 2% 0 7% -50px;
+    }
+
+        #tec>article>ul>b>li{
+            display: inline;
+            margin: 0 10px;
+            padding: 0 5px;
+            font-size: 1.3em;
+        }
+
+        #tec>article>ul>b>li.selected{
+            border-bottom: 2px solid #E34B0A;
+        }
+
+    #tec article{
+        display: none;
+    }
+
+    #tec article.visible, li{
+        display: block;
+    }
+
+    #tec div.list{
+        display: inline-block;
+        width: 20%;
+        margin-left: 20%;
+    }
+        #tec div.list ul{
+            margin-left: -40px;
+        }
+            #tec div.list li{
+                margin-bottom: 10%;
+            }
+    /* --- /Tecnologies--- */
+/* ----- /MAIN ----- */
+
+/* --- Footer --- */
+footer{
+    margin-left: -0.7%;
+    background-color: inherit;
+    padding: 3% 20% 2% 20%;
+    width: 61.3%;
+    position: relative;
+}
+    footer>div{
+        width: 30%;
+        margin-right: 40%;
+        display: inline;
+    }
+        footer>div img{
+            width: 50px;
+        }
+/* --- Footer --- */

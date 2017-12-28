@@ -1,6 +1,10 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
+    <!--
+            HECHO CON <3 Y JAVASCRIPT
+     -->
+
     <!-- meta -->
     <meta charset="utf-8">
     <meta name="description" content="Consultora" />
@@ -17,40 +21,185 @@
     <link href="img/logo.ico" rel="icon" type="image/x-icon" />
     <title>Consultora Àustria</title>
 </head>
-    <body>
-        <header>
-            <div id="slider">
-                <img src="img/frame-01.jpg" alt="frame-01" />
-                <img class="logo" src="img/frame-02.jpg" alt="frame-02" />
-            </div>
-            <div id="tittle">
-                <img src="img/logo.png" alt="Logo" />
-                <h1>Consultora Àustria</h1>
-            </div>
-        </header>
-        <nav>
+<body>
+    <header>
+        <div>
+            <img id="slider" src="img/frame-01.jpg" alt="frame" />
+        </div>
+        <div id="tittle">
+            <img src="img/logo.png" alt="Logo" />
+            <h1>Consultora Àustria</h1>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <a href="#"><li class="noselected" onclick="select(0);"><img src="img/logo.png" alt="Logo" /></li></a>
+            <a href="#tec"><li class="noselected" onclick="select(1);"><span>TEC</span></li></a>
+            <a href="#about"><li class="noselected" onclick="select(2);"><span>MORE</span></li></a>
+        </ul>
+    </nav>       
+    <section id="tec" class="light">
+        <article class="visible">
+            <h2>Software per a totes les plataformes</h2>
             <ul>
-                <a href="#header"><li class="noselected" onclick="select(0);"><img src="img/logo.png" alt="Logo" /></li></a>
-                <a href="#"><li class="noselected" onclick="select(1);"></li></a>
-                <a href="#about"><li class="noselected" onclick="select(2);"></li></a>
+                <b>
+                    <li class="selected" onclick="showArticle(1);">Android</li>
+                    <li onclick="showArticle(2);">IOS</li>
+                    <li onclick="showArticle(3);">Windows</li>
+                    <li onclick="showArticle(4);">Linux</li>
+                    <li onclick="showArticle(5);">MacOS</li>
+                    <li onclick="showArticle(6);">Web</li>
+                </b>
             </ul>
-        </nav>       
-        <section id="tecno">
-            <article>
-                <p>Software per a totes les plataformes</p>
+        </article>
+        <article class="visible">
+            <p>Li Europan lingues es membres del sam familie. Lor separat existentie es un myth. Por scientie, musica, sport etc, litot Europa usa li sam vocabular. </p>
+            <div class="list">
+                <h3>Sport</h3>
                 <ul>
-                    <li>Smartphone - Android</li>
-                    <li>Smartphone - IOS</li>
-                    <li>Windows</li>
-                    <li>Linux</li>
-                    <li>MacOS</li>
-                    <li>Web</li>
+                    <li>Europan</li>
+                    <li>Separat</li>
+                    <li>Vocabular</li>
+                    <li>Musica</li>
                 </ul>
-            </article>
-        </section>
-        <section id="about">
-        </section>
-        <footer><a href="https://creativecommons.org/licenses/by-nc-sa/3.0/">Creative commons: CC BY-NC-SA 3.0</a></footer>
-    </body>
+            </div>
+            <div class="list">
+                <h3>Myth</h3>
+                <ul>
+                    <li>Scientie</li>
+                    <li>Sport</li>
+                    <li>Existentie</li>
+                    <li>Lingues</li>
+                </ul>
+            </div>
+
+        </article>
+        <article>
+            <p>Li lingues differe solmen in li grammatica, li pronunciation e li plu commun vocabules. Omnicos directe al desirabilite de un nov lingua franca: On refusa</p>
+            <div class="list">
+                <h3>Sport</h3>
+                <ul>
+                    <li>Europan</li>
+                    <li>Separat</li>
+                    <li>Vocabular</li>
+                    <li>Musica</li>
+                </ul>
+            </div>
+            <div class="list">
+                <h3>Myth</h3>
+                <ul>
+                    <li>Scientie</li>
+                    <li>Sport</li>
+                    <li>Existentie</li>
+                    <li>Lingues</li>
+                </ul>
+                </div>
+        </article>
+        <article>
+            <p>Li Europan lingues es membres del sam familie. Lor separat existentie es un myth. Li lingues differe solmen in li grammatica, li pronunciation e li plu commun vocabules. Omnicos directe al desirabilite de un nov lingua franca: On refusa</p>
+            <div class="list">
+                <h3>Sport</h3>
+                <ul>
+                    <li>Europan</li>
+                    <li>Separat</li>
+                    <li>Vocabular</li>
+                    <li>Musica</li>
+                </ul>
+            </div>
+            <div class="list">
+                <h3>Myth</h3>
+                <ul>
+                    <li>Scientie</li>
+                    <li>Sport</li>
+                    <li>Existentie</li>
+                    <li>Lingues</li>
+                </ul>
+            </div>
+        </article>
+        <article>
+            <p> Li lingues differe solmen in li grammatica, li pronunciation e li plu commun vocabules. Omnicos directe al desirabilite de un nov lingua franca: On refusa. Li Europan lingues es membres del sam familie. Lor separat existentie es un myth.</p>
+            <div class="list">
+                <h3>Sport</h3>
+                <ul>
+                    <li>Europan</li>
+                    <li>Separat</li>
+                    <li>Vocabular</li>
+                    <li>Musica</li>
+                </ul>
+            </div>
+            <div class="list">
+                <h3>Myth</h3>
+                <ul>
+                    <li>Scientie</li>
+                    <li>Sport</li>
+                    <li>Existentie</li>
+                    <li>Lingues</li>
+                </ul>
+            </div>
+        </article>
+        <article>
+            <p>Li Europan lingues es membres del sam familie. Li lingues differe solmen in li grammatica, li pronunciation e li plu commun vocabules. Omnicos directe al desirabilite de un nov lingua franca: On refusa</p>
+            <div class="list">
+                <h3>Sport</h3>
+                <ul>
+                    <li>Europan</li>
+                    <li>Separat</li>
+                    <li>Vocabular</li>
+                    <li>Musica</li>
+                </ul>
+            </div>
+            <div class="list">
+                <h3>Myth</h3>
+                <ul>
+                    <li>Scientie</li>
+                    <li>Sport</li>
+                    <li>Existentie</li>
+                    <li>Lingues</li>
+                </ul>
+            </div>
+        </article>
+        <article>
+            <p>Lor separat existentie es un myth. Por scientie, musica, sport etc, litot Europa usa li sam vocabular. Li lingues differe solmen in li grammatica, li pronunciation.</p>
+            <div class="list">
+                <h3>Sport</h3>
+                <ul>
+                    <li>Europan</li>
+                    <li>Separat</li>
+                    <li>Vocabular</li>
+                    <li>Musica</li>
+                </ul>
+            </div>
+            <div class="list">
+                <h3>Myth</h3>
+                <ul>
+                    <li>Scientie</li>
+                    <li>Sport</li>
+                    <li>Existentie</li>
+                    <li>Lingues</li>
+                </ul>
+            </div>
+        </article>
+    </section>
+    <section id="about" class="darck">
+        <article>
+            <h2>Qui som</h2>
+            <p>Li Europan lingues es membres del sam familie. Lor separat existentie es un myth. Li lingues differe solmen in li grammatica, li pronunciation e li plu commun vocabules. Omnicos directe al desirabilite de un nov lingua franca: On refusa.Li Europan lingues es membres del sam familie. Lor separat existentie es un myth. Li lingues differe solmen in li grammatica, li pronunciation e li plu commun vocabules. Omnicos directe al desirabilite de un nov lingua franca: On refusa</p>
+        </article>
+    </section>
+    <footer>
+        <div>
+            <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">
+                <img src="img/cc_icon_white_x2.png" alt="CC" />
+                <img src="img/attribution_icon_white_x2.png" alt="BY" />
+                <img src="img/nc_white_x2.png" alt="NC" />
+                <img src="img/sa_white_x2.png" alt="SA" />
+            </a>
+        </div>
+        <div>
+            <img src="img/facebok-icon.png" alt="facebook" />
+            <img src="img/mail-icon.png" alt="mail" />
+        </div>
+    </footer>
+</body>
 </html>
 

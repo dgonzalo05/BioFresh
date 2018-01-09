@@ -3,7 +3,7 @@
 <head>
     <!--
             HECHO CON <3 Y JAVASCRIPT
-     -->
+    -->
 
     <!-- meta -->
     <meta charset="utf-8">
@@ -34,156 +34,90 @@
     <nav>
         <ul>
             <a href="#"><li class="noselected" onclick="select(0);"><img src="img/logo.png" alt="Logo" /></li></a>
-            <a href="#tec"><li class="noselected" onclick="select(1);"><span>TEC</span></li></a>
-            <a href="#about"><li class="noselected" onclick="select(2);"><span>MORE</span></li></a>
+            <a href="#about"><li class="noselected" onclick="select(1);"><span>A</span></li></a>
+            <a href="#tec"><li class="noselected" onclick="select(2);"><span>T</span></li></a>
         </ul>
-    </nav>       
-    <section id="tec" class="light">
+    </nav>
+    <section id="about">
+        <article>
+            <h2>Qui som</h2>
+            <p>Som una consultora que oferim aplicacions senzilles i fàcils d’utilitzar per a empreses grans o petites. El nostre objectiu es ajudar a tothom que necessiti els nostres serveis i oferir el màxim rendiment de nosaltres. Som un equip amb iniciativa i orientació, també tenim una bona comunicació amb els nostres clients. Els nostres serveis son multiplataforma.</p>
+            <span>Aaron Swartz</span>
+            <img src="./img/140113_TECH_AaronSwartz2009.jpg" alt="Aaron Swarts" />
+            <img src="img/3c61e0f.jpg" alt="San Tarazona" />
+            <img src="./img/linuxcon_europe_linus_torvalds_05-100742477-large.jpg" alt="Linux Torbal" />
+            <img src="./img/Nota37A-1.jpg" alt="Bill Gates" />
+            <img src="./img/stallman-cloud-computing.jpg" alt="Richard Stallman" />
+            <img src="./img/photo.jpg" alt="Amelia Lores" />
+            <img src="./img/steve-jobs-lider1.jpg" alt="Steve Jobs" />
+            <img src="./img/vU4coJGL_400x400.jpg" alt="Carles Caño" />
+        </article>
+    </section>
+    <section id="tec">
         <article class="visible">
             <h2>Software per a totes les plataformes</h2>
             <ul>
                 <b>
-                    <li class="selected" onclick="showArticle(1);">Android</li>
-                    <li onclick="showArticle(2);">IOS</li>
-                    <li onclick="showArticle(3);">Windows</li>
-                    <li onclick="showArticle(4);">Linux</li>
-                    <li onclick="showArticle(5);">MacOS</li>
-                    <li onclick="showArticle(6);">Web</li>
+                    <li class="selected" onclick="showArticle(1);">Desktop</li>
+                    <li onclick="showArticle(2);">Mobile</li>
+                    <li onclick="showArticle(3);">Web</li>
                 </b>
             </ul>
         </article>
-        <article class="visible">
-            <p>Li Europan lingues es membres del sam familie. Lor separat existentie es un myth. Por scientie, musica, sport etc, litot Europa usa li sam vocabular. </p>
+        <article class="visible"><!-- Desktop -->
+            <p>Fem aplicacions per a sistemes de 32 o 64 bits, pot ser un sistema antic o nou, nosaltres farem el possible per satisfer al client.</p>
             <div class="list">
-                <h3>Sport</h3>
+                <h3>Serveis</h3>
                 <ul>
-                    <li>Europan</li>
-                    <li>Separat</li>
-                    <li>Vocabular</li>
-                    <li>Musica</li>
+                    <li>Desenvolpament d’APIS i middlewares</li>
+                    <li>Manteniment i suport</li>
+                    <li>Desenvolupament a mida d’aplicacions d’àmbit corporatiu
+</li>
                 </ul>
             </div>
             <div class="list">
-                <h3>Myth</h3>
+                <h3>Plataformes</h3>
                 <ul>
-                    <li>Scientie</li>
-                    <li>Sport</li>
-                    <li>Existentie</li>
-                    <li>Lingues</li>
+                    <li>Linux (Debian)</li>
+                    <li>Linux (RedHat)</li>
+                    <li>Windows</li>
+                    <li>MAC OS</li>
                 </ul>
             </div>
 
         </article>
-        <article>
-            <p>Li lingues differe solmen in li grammatica, li pronunciation e li plu commun vocabules. Omnicos directe al desirabilite de un nov lingua franca: On refusa</p>
+        <article><!-- Mobile -->
+            <p>Fem aplicacions per a qualsevol plataforma mòbil, i utilitzem tecnologies natives (Java, ObjectiveC, Swift) o híbrides (HTML5, JS, CSS).</p>
             <div class="list">
-                <h3>Sport</h3>
+                <h3>Serveis</h3>
                 <ul>
-                    <li>Europan</li>
-                    <li>Separat</li>
-                    <li>Vocabular</li>
-                    <li>Musica</li>
+                    <li>Desenvolupament d’aplicacions natives</li>
+                    <li>Desenvolupament d’aplicacions híbrides i multiplataforma</li>
+                    <li>Serveis de notificacions Push</li>
+                    <li>Manteniment i suport</li>
                 </ul>
             </div>
             <div class="list">
-                <h3>Myth</h3>
+                <h3>Plataformes</h3>
                 <ul>
-                    <li>Scientie</li>
-                    <li>Sport</li>
-                    <li>Existentie</li>
-                    <li>Lingues</li>
-                </ul>
-                </div>
-        </article>
-        <article>
-            <p>Li Europan lingues es membres del sam familie. Lor separat existentie es un myth. Li lingues differe solmen in li grammatica, li pronunciation e li plu commun vocabules. Omnicos directe al desirabilite de un nov lingua franca: On refusa</p>
-            <div class="list">
-                <h3>Sport</h3>
-                <ul>
-                    <li>Europan</li>
-                    <li>Separat</li>
-                    <li>Vocabular</li>
-                    <li>Musica</li>
-                </ul>
-            </div>
-            <div class="list">
-                <h3>Myth</h3>
-                <ul>
-                    <li>Scientie</li>
-                    <li>Sport</li>
-                    <li>Existentie</li>
-                    <li>Lingues</li>
+                    <li>Android</li>
+                    <li>IOS</li>
+                    <li>Windows Phone</li>
                 </ul>
             </div>
         </article>
-        <article>
-            <p> Li lingues differe solmen in li grammatica, li pronunciation e li plu commun vocabules. Omnicos directe al desirabilite de un nov lingua franca: On refusa. Li Europan lingues es membres del sam familie. Lor separat existentie es un myth.</p>
+        <article><!-- Web -->
+            <p>Fem webs amb un disseny segons els objectius del client.</p>
             <div class="list">
-                <h3>Sport</h3>
+                <h3>Serveis</h3>
                 <ul>
-                    <li>Europan</li>
-                    <li>Separat</li>
-                    <li>Vocabular</li>
-                    <li>Musica</li>
+                    <li>Disseny web</li>
+                    <li>Disseny mòbil</li>
+                    <li>Disseny editorial</li>
+                    <li>Identitat corporativa</li>
+                    <li>Packaging i producte</li>
                 </ul>
             </div>
-            <div class="list">
-                <h3>Myth</h3>
-                <ul>
-                    <li>Scientie</li>
-                    <li>Sport</li>
-                    <li>Existentie</li>
-                    <li>Lingues</li>
-                </ul>
-            </div>
-        </article>
-        <article>
-            <p>Li Europan lingues es membres del sam familie. Li lingues differe solmen in li grammatica, li pronunciation e li plu commun vocabules. Omnicos directe al desirabilite de un nov lingua franca: On refusa</p>
-            <div class="list">
-                <h3>Sport</h3>
-                <ul>
-                    <li>Europan</li>
-                    <li>Separat</li>
-                    <li>Vocabular</li>
-                    <li>Musica</li>
-                </ul>
-            </div>
-            <div class="list">
-                <h3>Myth</h3>
-                <ul>
-                    <li>Scientie</li>
-                    <li>Sport</li>
-                    <li>Existentie</li>
-                    <li>Lingues</li>
-                </ul>
-            </div>
-        </article>
-        <article>
-            <p>Lor separat existentie es un myth. Por scientie, musica, sport etc, litot Europa usa li sam vocabular. Li lingues differe solmen in li grammatica, li pronunciation.</p>
-            <div class="list">
-                <h3>Sport</h3>
-                <ul>
-                    <li>Europan</li>
-                    <li>Separat</li>
-                    <li>Vocabular</li>
-                    <li>Musica</li>
-                </ul>
-            </div>
-            <div class="list">
-                <h3>Myth</h3>
-                <ul>
-                    <li>Scientie</li>
-                    <li>Sport</li>
-                    <li>Existentie</li>
-                    <li>Lingues</li>
-                </ul>
-            </div>
-        </article>
-    </section>
-    <section id="about" class="darck">
-        <article>
-            <h2>Qui som</h2>
-            <p>Li Europan lingues es membres del sam familie. Lor separat existentie es un myth. Li lingues differe solmen in li grammatica, li pronunciation e li plu commun vocabules. Omnicos directe al desirabilite de un nov lingua franca: On refusa.Li Europan lingues es membres del sam familie. Lor separat existentie es un myth. Li lingues differe solmen in li grammatica, li pronunciation e li plu commun vocabules. Omnicos directe al desirabilite de un nov lingua franca: On refusa</p>
         </article>
     </section>
     <footer>

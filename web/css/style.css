@@ -1,6 +1,7 @@
 body{
     background-color: #37383A;
-    padding: 0;
+    padding: auto;
+    width: 99%;
     font-family: sans-serif;
 }
 p{
@@ -17,11 +18,9 @@ header>div, section{
     margin: -0.7% 0 0 -0.7%;
 }
 
-#slider{   
+#slider{
     width: 100%;
     overflow: hidden;
-    -webkit-transition: opacity 2s;
-    transition: opacity 2s;
 }
 /* --- /Slider --- */
 
@@ -32,6 +31,7 @@ header>div, section{
     color: white;
     width: 270px;
     margin: -15% 0 0 70%;
+    clear: left;
 }
 
 #tittle img{
@@ -42,7 +42,7 @@ header>div, section{
 
 /* --- Navigation Menu --- */
 nav{
-    z-index: 100;   
+    z-index: 100;
     position: fixed;
     margin-top: -43%;
     margin-left: -2%;
@@ -79,18 +79,36 @@ section{
 }
 
     /* --- Light section ---*/
-    section.light{
+    section:nth-child(odd){
         background-color: #D8D8D8;
         color: #E34B0A;
     }
     /* --- /Ligth Section --- */
 
     /* --- Darck Section --- */
-    section.darck{
+    section:nth-child(even){
         background-color: #E34B0A;
         color: #D8D8D8;
     }
     /* --- Darck Section --- */
+
+    #about img{
+        display: inline;
+        width: 200px;
+        z-index: 100;
+    }
+    
+    #about img:hover{
+        transition: opacity 0.5;
+        z-index: 0;
+    }
+
+    #about span{
+        margin: 200px 0 -200px;
+        display: block;
+        z-index: 100;
+    }
+
 
     /* --- Tecnologies --- */
     #tec{
@@ -110,7 +128,7 @@ section{
         }
 
         #tec>article>ul>b>li.selected{
-            border-bottom: 2px solid #E34B0A;
+            border-bottom: 2px solid #D8D8D8/*#E34B0A*/;
         }
 
     #tec article{
@@ -123,8 +141,8 @@ section{
 
     #tec div.list{
         display: inline-block;
-        width: 20%;
-        margin-left: 20%;
+        width: 30%;
+        margin-left: 15%;
     }
         #tec div.list ul{
             margin-left: -40px;
@@ -148,7 +166,7 @@ footer{
         position: relative;
     }
         footer>div img{
-            width: 50px;
+            width: 30px;
         }
 
         footer>div img:hover{
@@ -158,7 +176,7 @@ footer{
     footer>div:nth-child(1){
         float: left;
     }
-    
+
     footer>div:nth-child(2){
         float: right;
     }
